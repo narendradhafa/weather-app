@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WeatherActivityRetrofit">
+
+    <ImageView
+        android:id="@+id/image_condition_retro"
+        android:layout_width="157dp"
+        android:layout_height="164dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sun" />
+
+    <TextView
+        android:id="@+id/text_city_retro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:hint="Malang"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toStartOf="@+id/image_condition_retro"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Malang" />
+
+    <TextView
+        android:id="@+id/text_coordinate_retro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/image_condition_retro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_city_retro"
+        tools:text="-8, 112.625" />
+
+    <TextView
+        android:id="@+id/text_title_temperature_retro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/text_title_windspeed_retro"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_condition_retro"
+        tools:text="Temperature" />
+
+    <TextView
+        android:id="@+id/text_temperature_retro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_title_temperature_retro"
+        app:layout_constraintStart_toStartOf="@+id/text_title_temperature_retro"
+        app:layout_constraintTop_toBottomOf="@+id/text_title_temperature_retro"
+        tools:text="24" />
+
+    <TextView
+        android:id="@+id/text_title_windspeed_retro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text_title_temperature_retro"
+        app:layout_constraintTop_toBottomOf="@+id/text_condition_retro"
+        tools:text="Wind Speed" />
+
+    <TextView
+        android:id="@+id/text_windspeed_unit_retro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/text_windspeed_retro"
+        app:layout_constraintStart_toStartOf="@+id/text_windspeed_retro"
+        app:layout_constraintTop_toBottomOf="@+id/text_windspeed_retro"
+        tools:text="mph" />
+
+    <TextView
+        android:id="@+id/text_windspeed_retro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="12.2"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_title_windspeed_retro"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="@+id/text_title_windspeed_retro"
+        app:layout_constraintTop_toBottomOf="@+id/text_title_windspeed_retro" />
+
+    <TextView
+        android:id="@+id/text_condition_retro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_condition_retro"
+        tools:text="Sunny" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
